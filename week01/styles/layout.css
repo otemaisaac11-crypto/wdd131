@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+    height:fit-content;
+    color: white;
+}
+
+header, footer {
+    background: rgb(83, 146, 167);
+    padding: 2em;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(6, 67, 121);
+    padding: 2em;
+
+}
