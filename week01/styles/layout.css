@@ -7,11 +7,15 @@ body {
 }
 
 header {
-    display :grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background: rgb(83, 146, 167);
     padding: 2em;
     
+}
+
+footer {
+    background: rgb(83, 146, 167);
+    padding: 2em;
 }
 
 main {
@@ -21,3 +25,4 @@ main {
     padding: 2em;
 
 }
+ 
