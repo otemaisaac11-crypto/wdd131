@@ -3,9 +3,12 @@ body {
     grid-auto-rows: auto 1fr auto;
     height:fit-content;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header, footer {
+header {
+    display :grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background: rgb(83, 146, 167);
     padding: 2em;
     
