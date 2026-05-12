@@ -1,56 +1,85 @@
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+/* Reset */
+* {
     margin: 0;
-    background: linear-gradient(180deg, #082a4d 0%, #1f3a82 100%);
-    color: #f8fafc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body Grid Layout */
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Header */
 header {
-    background: rgba(31, 64, 129, 0.95);
-    padding: 2em;
+    grid-area: header;
+}
+
+/* Header Content */
+.header-content {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    height: 120px;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    padding: 1rem;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
 nav a {
-    color: #f8fafc;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1.5rem;
-}
-
-footer {
-    background: rgba(31, 64, 129, 0.95);
-    padding: 2em;
-}
-
+/* Main Content */
 main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1.5rem;
-    background-color: rgba(7, 33, 76, 0.92);
-    padding: 2em;
-    margin: 1rem 2rem;
-    border-radius: 0.75rem;
+    grid-area: main;
+    background-color: #d3d3d3;
+    padding: 2rem;
+    min-height: 300px;
+}
+
+/* Aside Content */
+aside {
+    grid-area: aside;
+    background-color: #ffffff;
+    padding: 2rem;
+    min-height: 300px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    min-height: 120px;
 }
 
  
