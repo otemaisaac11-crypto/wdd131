@@ -3,11 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Place page assignment">
+    <meta name="author" content="Isaac Otema">
+
+    <title>Place Page</title>
+
+    
     <link rel="stylesheet" href="styles/place.css">
-    <script src="place.js" defer></script>
+
+    
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <div class="brand">
+                <a href="place.html">Explore South Africa</a>
+            </div>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <ul class="site-nav__list">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__media">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/bird-large.webp">
+                    <source media="(min-width: 768px)" srcset="images/bird-small.webp">
+                    <img src="images/south-africa-hero-small.webp" alt="Cape Town coastline with Table Mountain" class="hero__image">
+                </picture>
+            </div>
+            <div class="hero__content container">
+                <p class="eyebrow">Destination</p>
+                <h1>South Africa</h1>
+                <p>Discover dramatic coastlines, vibrant cities, and wildlife safaris in this iconic African destination.</p>
+                <a href="#overview" class="button button--primary">Start exploring</a>
+            </div>
+        </section>
+
+        <section id="weather" class="section section--weather container">
+            <div class="weather-card">
+                <div class="weather-card__icon">
+                    <img src="images/cloud.jpg" alt="Cloud weather icon" class="weather-card__cloud">
+                </div>
+                <div class="weather-card__birds">
+                    <img src="images/bird-small.webp" alt="Small bird" class="weather-card__bird weather-card__bird--small">
+                    <img src="images/bird-large.webp" alt="Large bird" class="weather-card__bird weather-card__bird--large">
+                </div>
+                <div class="weather-card__info">
+                    <h2>Today’s Weather</h2>
+                    <p>Sunny with light clouds across the coast — perfect for bird watching and outdoor adventures.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="section section--intro container">
+            <div class="section__text">
+                <h2>Why visit South Africa?</h2>
+                <p>From the colorful streets of Bo-Kaap to the sweeping views from Table Mountain, South Africa offers dynamic landscapes, rich culture, and unforgettable experiences. Enjoy world-class wine country, national parks, and coastal adventures all in one trip.</p>
+            </div>
+        </section>
+
+        <section id="highlights" class="section section--grid container">
+            <article class="card">
+                <h3>Wildlife Safari</h3>
+                <p>Spot the Big Five in Kruger National Park and explore protected reserves with expert guides.</p>
+            </article>
+            <article class="card">
+                <h3>Coastal Drives</h3>
+                <p>Drive along the Garden Route and enjoy beaches, lagoons, and dramatic cliffs.</p>
+            </article>
+            <article class="card">
+                <h3>City Culture</h3>
+                <p>Experience Cape Town’s cuisine, markets, museums, and vibrant neighborhoods.</p>
+            </article>
+        </section>
+
+        <section id="activities" class="section section--split container">
+            <div class="section__media">
+                <img src="images/cape-town-cityscape.jpg" alt="Cape Town cityscape" class="responsive-image">
+            </div>
+            <div class="section__details">
+                <h2>Plan your adventure</h2>
+                <p>Whether you want a relaxed wine tour, an active hiking itinerary, or a coastal escape, South Africa delivers experiences suited to every traveler.</p>
+                <ul>
+                    <li>Hike Table Mountain and Cape Point</li>
+                    <li>Visit Robben Island and historic districts</li>
+                    <li>Enjoy wildlife and safari lodges</li>
+                </ul>
+                <a href="#" class="button button--secondary">Book a tour</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer container">
+        <p>Explore the best of South Africa with immersive travel experiences and unforgettable scenery.</p>
+    </footer>
 </body>
 </html>
