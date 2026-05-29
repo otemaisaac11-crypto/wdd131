@@ -8,6 +8,7 @@
     <title>Place Page</title>
 
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css"
 
     <script defer src="scripts/place.js"></script>
 </head>
@@ -24,14 +25,25 @@
                 <source srcset="images/large-bird.webp" 
                         media="(min-width: 800px)">
 
-                <img src="images/small-bird.jpg" 
+                <img src="images/small-bird.jpg"> 
                     alt="A colorful bird perched on a branch" 
                 
             </picture>
 
         </section>
 
-        <section class="Weather">
+        <section class="data">
+
+            <h2>Data</h2>
+            <p><strong>Country:</strong> Colombia</p>
+            <p><strong>Capital:</strong> Bogotá</p>
+            <p><strong>Population:</strong> 52.5 million</p>
+            <p><strong>Language:</strong> Spanish</p>
+            <p><strong>Currency:</strong> Colombian Peso</p>
+
+        </section>
+
+        <section class="weather">
             <h2>
                 Weather
                 <span class="weather-emoji">☀️</span>
@@ -39,7 +51,7 @@
 
             <img src="images/weather.jpg"
                  alt="Weather in Colombia"
-                 clas="weather-icon">
+                 class="weather-icon">
 
                  <p><strong>Temperature:</strong> 25°C</p>
                  <p><strong>Condition:</strong> Sunny</p>

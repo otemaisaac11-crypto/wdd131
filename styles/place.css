@@ -1,0 +1,72 @@
+:root{
+    --primary-color: #fcd116;
+    --secondary-color: #003893;
+    --accent-color: #ce1126;
+
+    --light-color: #ffffff;
+    --dark-color:#222222;
+
+    --box-background: rgba(255, 255, 255, 0.8);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.large-bird img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data,
+.weather {
+    background-color: var(--box-background);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.data h2,
+.weather h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.weather-icon {
+    width: 70px;
+    margin-bottom: 1rem;
+}
+
+.weather-emoji {
+    display: none;
+}
+
+footer p:first-child {
+    margin-bottom: 0.5rem;
+}

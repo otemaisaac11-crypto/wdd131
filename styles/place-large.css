@@ -1,0 +1,37 @@
+@media screen and (min-width: 800px) {
+    body {
+        position: relative;
+    }
+    .large-bird img {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .data {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        width: 280px;
+    }
+
+    .weather {
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        width: 280px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-emoji {
+        display: inline;
+    }
+
+    .weather h2::after {
+        content: " 🌞";
+    }
+
+
+}
