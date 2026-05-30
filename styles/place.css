@@ -44,6 +44,15 @@ header h1 {
     display: block;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100;
+    display: block;
+}
+
 .data,
 .weather {
     background-color: var(--box-background);

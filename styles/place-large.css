@@ -1,9 +1,10 @@
 @media screen and (min-width: 800px) {
-    body {
+    .hero {
         position: relative;
     }
-    .large-bird img {
+    .hero img {
         height: 100vh;
+        width: 100;
         object-fit: cover;
     }
 
@@ -31,11 +32,6 @@
 
     .weather h2::after {
         content: " 🌞";
-    }
-
-    footer {
-        display: center;
-        text-align: center;
     }
 
 
