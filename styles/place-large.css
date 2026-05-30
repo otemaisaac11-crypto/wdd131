@@ -33,5 +33,10 @@
         content: " 🌞";
     }
 
+    footer {
+        display: center;
+        text-align: center;
+    }
+
 
 }
