@@ -11,6 +11,6 @@ main {
 img {
     width: 100%;
     background-color: #331212;
-    animation: fade 10s ease-in-out;
+    animation: fade 14s;
 
 }
