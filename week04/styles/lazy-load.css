@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    background-color: #331212;
+    animation: fade 10s ease-in-out;
+
+}
