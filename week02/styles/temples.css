@@ -4,92 +4,125 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #333;
+    color: #222;
+    background-color: #f7f9fa;
+    line-height: 1.6;
 }
 
-/* Header & Flex Navigation (Mobile: Stacked) */
+/* Header Design & Flexbox Mobile Stack */
 header {
-    background-color: #4a154b;
+    background-color: #4a154b; /* Vibrant plum theme accent */
     color: white;
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
     position: relative;
 }
+
 h1 {
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
 }
+
+/* CSS Flex applied directly to the nav element container */
 nav {
-    display: none; /* Hide navigation links by default on mobile */
+    display: none; /* Hidden on mobile by default until toggled */
     flex-direction: column;
+    margin-top: 0.5rem;
 }
+
+/* Toggled open view class triggered via JavaScript */
 nav.show {
-    display: flex; /* Show the navigation links when the 'show' class is applied */
+    display: flex;
 }
+
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
+
+/* Required interactive focus hover effect state */
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Main Container & Mobile Grid (1 Column) */
-main {
-    max-width: 95%;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-main h2 {
-    font-family: 'Montserrat', sans-serif;
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-/* Images & Captions */
-figure {
-    background-color: #f4f4f6;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-figcaption {
-    padding: 10px;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    background-color: #4a154b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Hamburger Menu Toggle Properties */
+/* Hamburger Action Menu Button Properties */
 #menu {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     border: 0;
     background: none;
     color: white;
     position: absolute;
-    top: 15px;
+    top: 12px;
     right: 15px;
     cursor: pointer;
 }
-#menu::before {
-    content: "☰";
+
+#menu::before { content: "☰"; }
+#menu.show::before { content: "❌"; }
+
+/* Centered Layout and 1-Column CSS Grid Mobile Container */
+main {
+    max-width: 90%;          /* Restricts maximum width boundary footprint */
+    margin: 1.5rem auto;     /* Centers main element horizontally */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile viewports */
+    gap: 1.5rem;
 }
-#menu.show::before {
-    content: "❌";
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #4a154b;
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Proximity Formatting */
+figure {
+    background-color: white;
+    border: 1px solid #e1e4e6;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* FIX: Image sizing constraints ensuring layout matches perfectly */
+figure img {
+    width: 100%;
+    max-width: 100%;
+    height: 240px;           /* Consistent image row height box sizing */
+    object-fit: cover;       /* Clean cropped profile framing rules */
+    display: block;
+}
+
+figcaption {
+    padding: 1rem;
+    font-weight: 600;
+    background-color: white;
+    border-top: 1px solid #f0f2f5;
+}
+
+/* Footer Element Specifications */
+footer {
+    background-color: #4a154b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
 }
