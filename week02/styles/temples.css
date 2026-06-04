@@ -1,0 +1,73 @@
+/* Core Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+/* Header & Flex Navigation (Mobile: Stacked) */
+header {
+    background-color: #4a154b; /* Purple tone from assignment */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+nav {
+    display: flex;
+    flex-direction: column; /* Stack links vertically on mobile */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Basic hover effect */
+}
+
+/* Main Container & Mobile Grid (1 Column) */
+main {
+    max-width: 95%;
+    margin: 20px auto; /* Centers the main block */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+}
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* Images & Captions */
+figure {
+    background-color: #f4f4f6;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+figcaption {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #4a154b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

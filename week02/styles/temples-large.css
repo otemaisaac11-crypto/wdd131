@@ -1,0 +1,18 @@
+/* Layout Adjustments for Desktop Headers */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+nav {
+    flex-direction: row; /* Align navigation links horizontally */
+    gap: 15px;
+}
+
+/* Centered Desktop Layout & Grid Setup (3 Columns) */
+main {
+    max-width: 960px; /* Limits the element width */
+    margin: 30px auto; /* Horizontally center main component */
+    grid-template-columns: repeat(3, 1fr); /* 3 column layout setup */
+}
