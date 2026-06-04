@@ -1,14 +1,14 @@
-// Place current year in footer
-document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Place current date on page
-const currentDateElement = document.getElementById("currentdate");
-if (currentDateElement) {
-    currentDateElement.textContent = new Date().toLocaleDateString();
-}
+// Get current year
+const year = new Date().getFullYear();
+
+// Place current year in footer
+document.getElementById("currentyear").textContent = year;
 
 // Place last modified date in footer
-document.getElementById("lastModified").textContent = document.lastModified;
+document.getElementById("lastModified").textContent =
+    `Last Modified: ${document.lastModified}`;
+
     
 // Toggle the 'show' class on the nav and button when clicked
 document.getElementById("menu").addEventListener("click", function() {
