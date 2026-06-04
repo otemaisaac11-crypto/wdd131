@@ -16,3 +16,13 @@ main {
     margin: 30px auto; /* Horizontally center main component */
     grid-template-columns: repeat(3, 1fr); /* 3 column layout setup */
 }
+/* Hide the hamburger button entirely on larger screens */
+#menu {
+    display: none; 
+}
+
+/* Ensure the navigation menu always displays horizontally on desktop */
+nav {
+    display: flex !important; 
+    flex-direction: row;
+}

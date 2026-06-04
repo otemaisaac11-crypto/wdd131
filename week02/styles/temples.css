@@ -71,3 +71,36 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
+
+/* --- Hamburger Menu Styles --- */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Use the standard 'hamburger' symbol by default */
+#menu::before {
+    content: "☰";
+}
+
+/* Switch the symbol to an 'X' when the 'show' class is applied */
+#menu.show::before {
+    content: "❌";
+}
+
+/* Hide navigation links by default on mobile */
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+/* Show the navigation links when the 'show' class is applied */
+nav.show {
+    display: flex;
+}
