@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Picture Album</title>
-
-    <meta name="description" content="A visual album gallery showcasing  temples around the world.">
-    <meta name="author" content="Otema Isaac">
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="week02/styles/temples-large.css">
-    <link rel="stylesheet" href="week02/styles/temples.css" media="(min-width: 600px)">
-    
-
-    <script defer src="week02/scripts/temples.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  
+  <meta name="description" content="A responsive temple picture album showcasing temples around the world using HTML, CSS Grid, Flexbox, and JavaScript.">
+<meta name="author" content="Otema Isaac">
 
 
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/temples.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Temple Album</h1>
-        <button id="menu" title="Toggle Menu"></button>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
-        </nav>
 
-    </header>
-    <main>
-        <h2>Temple images</h2>
-    
-        <figure>
-            <img src="images/aba-temple.jpg" alt="Aba Nigeria Temple" loading="lazy">
-            <figcaption>Aba Nigeria Temple</figcaption>
-        </figure>
+<header>
+  <div class="header-bar">
+    <span class="site-title">Temple Album</span>
+    <button id="menuBtn" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+  </div>
 
-        <figure>
-            <img src="images/alberta-temple-lds.jpg" alt="Cardston Alberta Temple" loading="lazy">
-            <figcaption>Cardston Alberta Temple</figcaption>
-        </figure>
+  <nav id="navMenu">
+    <a href="#">Home</a>
+    <a href="#">Old</a>
+    <a href="#">New</a>
+    <a href="#">Large</a>
+    <a href="#">Small</a>
+  </nav>
+</header>
 
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="Albuquerque New Mexico Temple" loading="lazy">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
+<main>
 
-        <figure>
-            <img src="images/banana-temple.jpeg" alt="Banana Temple" loading="lazy">
-            <figcaption>Banana Temple</figcaption>
-        </figure>
+  <h1>Temple Album</h1>
 
-        <figure>
-            <img src="images/colombia-temple.jpg" alt="Barranquilla Colombia Temple" loading="lazy">
-            <figcaption>Barranquilla Colombia Temple</figcaption>
-        </figure>
+  <section class="gallery">
 
-        <figure>
-            <img src="images/durban.lds.jpg" alt="Durban South Africa Temple" loading="lazy">
-            <figcaption>Durban South Africa Temple</figcaption>
-        </figure>
+    <figure>
+      <img src="images/temple.jpeg" alt="San Diego California Temple">
+      <figcaption>San Diego California Temple</figcaption>
+    </figure>
 
-        <figure>
-            <img src="images/idaho-temple.jpg" alt="Idaho Falls Idaho Temple" loading="lazy">
-            <figcaption>Idaho Falls Idaho Temple</figcaption>
-        </figure>
+    <figure>
+      <img src="images/temple.jpeg" alt="Salt Lake City Utah Temple">
+      <figcaption>Salt Lake City Utah Temple</figcaption>
+    </figure>
 
-        <figure>
-            <img src="images/fort-collins-temple.jpg" alt="Fort Collins Colorado Temple" loading="lazy">
-            <figcaption>Fort Collins Colorado Temple</figcaption>
-        </figure>
+    <figure>
+      <img src="images/temple.jpeg" alt="Rome Italy Temple">
+      <figcaption>Rome Italy Temple</figcaption>
+    </figure>
 
-        <figure>
-            <img src="images/new_zealand_temple_lds.jpg" alt="Hamilton New Zealand Temple" loading="lazy">
-            <figcaption>Hamilton New Zealand Temple</figcaption>
-        </figure>
+    <figure>
+      <img src="images/temple.jpeg" alt="Paris France Temple">
+      <figcaption>Paris France Temple</figcaption>
+    </figure>
 
-    </main>
-    <footer>
-        <p>&copy; 2026 <span id="currentyear"></span> | Uganda | Otema Isaac</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
+    <figure>
+      <img src="images/temple.jpeg" alt="Tokyo Japan Temple">
+      <figcaption>Tokyo Japan Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple.jpeg" alt="Accra Ghana Temple">
+      <figcaption>Accra Ghana Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple.jpeg" alt="Nairobi Kenya Temple">
+      <figcaption>Nairobi Kenya Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple.jpeg" alt="London England Temple">
+      <figcaption>London England Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/temple.jpeg" alt="Johannesburg South Africa Temple">
+      <figcaption>Johannesburg South Africa Temple</figcaption>
+    </figure>
+
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Otema Isaac | Uganda</p>
+  <p>Last Modified: <span id="modified"></span></p>
+</footer>
+
 </body>
 </html>
