@@ -50,15 +50,18 @@ header h1 {
 }
 
 nav {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
   margin-top: 0.75rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 nav.open {
-  display: flex;
+  max-height: 1000px;
 }
 
 nav a {
