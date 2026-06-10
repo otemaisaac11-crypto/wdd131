@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a review request for Uganda Tourism Hub travel services.">
+  <meta name="author" content="Otema Isaac">
+  <title>Travel Request Form</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/larger.css">
+</head>
+<body>
+
+<header>
+  <div class="site-header">
+    <h1>Uganda Tourism Hub</h1>
+    <button id="menuBtn" aria-controls="navMenu" aria-expanded="false">&#9776;</button>
+  </div>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="attractions.html">Attractions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Travel Request Form</h2>
+  <form method="get" action="review.html">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="travel-date">Preferred travel date</label>
+    <input type="date" id="travel-date" name="travelDate" required>
+
+    <label for="destination">Choose destination</label>
+    <select id="destination" name="destination" required>
+      <option value="" disabled selected>Select a destination</option>
+      <option value="bwindi">Bwindi Impenetrable Forest</option>
+      <option value="murchison">Murchison Falls</option>
+      <option value="nile">Source of the Nile</option>
+      <option value="queen">Queen Elizabeth National Park</option>
+      <option value="rwenzori">Rwenzori Mountains</option>
+    </select>
+
+    <fieldset>
+      <legend>Travel Interests</legend>
+      <label for="safari"><input type="radio" id="safari" name="interest" value="safari" required> Safari</label>
+      <label for="birding"><input type="radio" id="birding" name="interest" value="birding"> Birding</label>
+      <label for="hiking"><input type="radio" id="hiking" name="interest" value="hiking"> Hiking</label>
+      <label for="culture"><input type="radio" id="culture" name="interest" value="culture"> Cultural Tours</label>
+      <label for="boat"><input type="radio" id="boat" name="interest" value="boat"> Boat Tours</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Options</legend>
+      <label for="guide"><input type="checkbox" id="guide" name="extras" value="guide"> Travel guide</label>
+      <label for="transfers"><input type="checkbox" id="transfers" name="extras" value="transfers"> Airport transfers</label>
+      <label for="accommodation"><input type="checkbox" id="accommodation" name="extras" value="accommodation"> Accommodation booking</label>
+      <label for="newsletter"><input type="checkbox" id="newsletter" name="extras" value="newsletter"> Mailing list</label>
+    </fieldset>
+
+    <label for="details">Trip details</label>
+    <textarea id="details" name="details" required></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Otema Isaac | BYU-I</p>
+</footer>
+
+<script src="./scripts/tourism.js" defer></script>
+</body>
+</html>
