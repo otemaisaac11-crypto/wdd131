@@ -23,6 +23,9 @@
       <label for="product">Product Name <span>*</span></label>
       <select id="product" name="product" required>
         <option value="" disabled selected>Select a Product ...</option>
+        <option value="laptop">Laptop</option>
+        <option value="phone">Smartphone</option>
+        <option value="headphones">Headphones</option>
       </select>
 
       <!-- Overall Rating -->
@@ -67,15 +70,15 @@
       </fieldset>
 
       <!-- Written Review -->
-      <label for="review">Written Review</label>
-      <textarea id="review" name="review" rows="5" placeholder="Write your review here..."></textarea>
+      <label for="review">Written Review <span>*</span></label>
+      <textarea id="review" name="review" rows="5" placeholder="Write your review here..." required></textarea>
 
       <!-- User Name -->
       <label for="username">Your Name</label>
       <input type="text" id="username" name="username" placeholder="Optional">
 
       <!-- Submit Button -->
-      <input type="submit" value="Submit Review">
+      <button type="submit">Submit Review</button>
 
     </form>
   </main>
