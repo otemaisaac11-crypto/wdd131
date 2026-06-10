@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Contact Uganda Tourism Hub for travel advice, bookings, and tourist information across Uganda.">
-
+<meta name="author" content="Otema Isaac">
 <title>Contact Us</title>
 
 <link rel="stylesheet" href="css/base.css">
@@ -32,28 +32,55 @@
 
 <h2>Contact Us</h2>
 
-<form id="contactForm">
+<form id="contactForm" method="get" action="review.html">
 
-<label>
-Name
-<input type="text" name="name" required>
-</label>
+<fieldset>
+<legend>Traveler Information</legend>
 
-<label>
-Email
-<input type="email" name="email" required>
-</label>
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
 
-<label>
-Message
-<textarea name="message" required></textarea>
-</label>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
 
-<input type="submit" value="Send Inquiry">
+<label for="travel-date">Preferred travel date</label>
+<input type="date" id="travel-date" name="travelDate" required>
+
+<label for="destination">Choose destination</label>
+<select id="destination" name="destination" required>
+<option value="" disabled selected>Select a destination</option>
+<option value="bwindi">Bwindi Impenetrable Forest</option>
+<option value="murchison">Murchison Falls</option>
+<option value="nile">Source of the Nile</option>
+<option value="queen">Queen Elizabeth National Park</option>
+<option value="rwenzori">Rwenzori Mountains</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+<legend>Travel Interests</legend>
+<label><input type="radio" name="interest" value="safari" required> Safari</label>
+<label><input type="radio" name="interest" value="birding"> Birding</label>
+<label><input type="radio" name="interest" value="hiking"> Hiking</label>
+<label><input type="radio" name="interest" value="culture"> Cultural Tours</label>
+<label><input type="radio" name="interest" value="boat"> Boat Tours</label>
+</fieldset>
+
+<fieldset>
+<legend>Additional Options</legend>
+<label><input type="checkbox" name="extras" value="guide"> Travel guide</label>
+<label><input type="checkbox" name="extras" value="transfers"> Airport transfers</label>
+<label><input type="checkbox" name="extras" value="accommodation"> Accommodation booking</label>
+<label><input type="checkbox" name="extras" value="newsletter"> Mailing list</label>
+</fieldset>
+
+<label for="details">Trip details</label>
+<textarea id="details" name="details" required></textarea>
+
+<button type="submit">Submit Request</button>
 
 </form>
-
-<p id="formResponse"></p>
 
 </main>
 

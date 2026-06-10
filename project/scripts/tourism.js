@@ -63,22 +63,6 @@ visitMessage.textContent =
 }
 }
 
-const form =
-document.querySelector("#contactForm");
-
-if(form){
-
-form.addEventListener("submit", function(event){
-
-event.preventDefault();
-
-document.querySelector("#formResponse")
-.textContent =
-"Thank you for contacting Uganda Tourism Hub!";
-
-});
-}
-
 const menuBtn = document.querySelector("#menuBtn");
 const navMenu = document.querySelector("#navMenu");
 
