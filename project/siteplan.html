@@ -14,14 +14,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/siteplan.css">
-  
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/siteplan.css">
+  <link rel="stylesheet" href="css/larger.css">
+  <script src="scripts/tourism.js" defer></script>
 </head>
 
 <body>
 
   <header>
-    <h1>Website Planning Document</h1>
+    <div class="site-header">
+      <h1>Uganda Tourism Hub</h1>
+      <button id="menuBtn" aria-controls="navMenu" aria-expanded="false">&#9776;</button>
+    </div>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>

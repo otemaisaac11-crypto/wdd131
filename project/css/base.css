@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --primary: #0B6E4F;
+  --secondary: #D8EFDB;
+  --accent: #F4A261;
+  --text: #1F3A2A;
+  --surface: #FFFFFF;
+  --muted: #5A7A67;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(180deg, #EDF7F1 0%, #F9FFFB 100%);
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), #0F855B);
+  color: white;
+  padding: 1rem 1.25rem;
+}
+
+header .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+#menuBtn {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: white;
+  padding: 0.65rem 0.9rem;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+  transition: background 0.25s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  background: linear-gradient(rgba(15, 58, 41, 0.5), rgba(15, 58, 41, 0.5)), url("../images/wildlife.webp") no-repeat center/cover;
+  border-radius: 22px;
+  padding: 3rem 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(15, 41, 28, 0.08);
+  color: #ffffff;
+}
+
+.hero h2 {
+  margin: 0 0 0.75rem;
+  font-family: 'Roboto', sans-serif;
+  color: #f4fff7;
+}
+
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+#attractionCards,
+.gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.card,
+figure,
+form {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px rgba(15, 41, 28, 0.06);
+}
+
+.card h3,
+figure figcaption {
+  margin: 0;
+  color: var(--primary);
+}
+
+.card p {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #dce9df;
+  background: #fbfdf9;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.95rem 1.25rem;
+  border-radius: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #f7fcfa;
+  transform: translateY(-1px);
+}
+
+footer {
+  background: #1f6336;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  margin-top: 2rem;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
