@@ -23,6 +23,8 @@
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
+    max-height: none;
+    overflow: visible;
   }
 
   .hero {
