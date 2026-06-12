@@ -15,14 +15,32 @@ const attractions = [
 
 const cards = document.querySelector("#attractionCards");
 
+function createAttractionCard(place) {
+  return `
+    <div class="card">
+      <h3>${place.name}</h3>
+      <p>${place.activity}</p>
+    </div>
+  `;
+}
+
+function updateVisitMessage(visits) {
+  const visitMessage = document.querySelector("#visitMessage");
+
+  if (!visitMessage) {
+    return;
+  }
+
+  if (visits === 1) {
+    visitMessage.textContent = "Welcome! This is your first visit.";
+  } else {
+    visitMessage.textContent = `You have visited ${visits} times.`;
+  }
+}
+
 if (cards) {
   attractions.forEach(place => {
-    cards.innerHTML += `
-      <div class="card">
-        <h3>${place.name}</h3>
-        <p>${place.activity}</p>
-      </div>
-    `;
+    cards.innerHTML += createAttractionCard(place);
   });
 }
 
